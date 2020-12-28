@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+// font-family: 'Open Sans', sans-serif;
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../assets/fonts/GothamBook.ttf") format("truetype"),
+    url("../assets/fonts/GothamBook.woff") format("woff"),
+    url("../assets/fonts/GothamBook.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../assets/fonts/gotham-medium-webfont.ttf") format("truetype"),
+    url("../assets/fonts/gotham-medium-webfont.woff") format("woff"),
+    url("../assets/fonts/gotham-medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../assets/fonts/Gotham-Bold.ttf") format("truetype"),
+    url("../assets/fonts/Gotham-Bold.woff") format("woff"),
+    url("../assets/fonts/Gotham-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+// @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import './core/vars';
 @import './core/mixins';
 @import './core/common';
+@import './core/inheritanse';
+
+//components
+@import './components/header';
+@import './components/menu';
+@import './components/social';
+@import './components/burger';
+@import './components/header-glide';
+@import './components/button';
+@import './components/about';
+@import './components/news';
+@import './components/card';
+@import './components/news-glide2';
+@import './components/gallery';
+@import './components/map';
+@import './components/contact';
+@import './components/footer';
+
+
+
+
+

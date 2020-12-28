@@ -1,0 +1,13 @@
+.map {
+  max-width: 1600px;
+  &__container {
+  max-width: 1600px;
+  min-height: 700px;
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+  &__iframe {
+    max-width: 1600px;
+    height: 700px;
+    width: 100%;
+  }
+}

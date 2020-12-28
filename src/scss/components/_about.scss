@@ -1,0 +1,168 @@
+.about {
+  padding-top: 100px;
+  position: relative;
+  max-width: 1600px;
+  &__title {
+    @include text($H44, 700, $button);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 170px;
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 1px;
+      margin: 0 auto;
+      border: 1px solid $button;
+      background-color: $button;
+      left: 0;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1200px) {
+      font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 -320)));
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: calc(
+        20px + (170 - 20) * ((100vw - 320px) / (1200 - 320))
+      );
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1172px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 110px;
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 473px;
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+      padding: 50px 24px 0px 50px;
+    }
+  }
+  &__ihfo-subtitle {
+    @include text($H22, 700, $button);
+    font-family: $second-font;
+    text-transform: uppercase;
+    @media (max-width: 1200px) {
+      font-size: calc(22px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+      text-align: center;
+    }
+  }
+  &__info-title {
+    @include text($H44, 700, $button);
+    text-transform: uppercase;
+    font-family: $title-font;
+    margin-bottom: 40px;
+    @media (max-width: 1200px) {
+      font-size: calc(44px + (54 - 44) * ((100vw - 320px) / (1200 - 320)));
+      text-align: center;
+    }
+  }
+  &__info-text {
+    @include text($H18, 400, $text);
+    font-family: $text-font;
+    margin-bottom: 40px;
+    @media (max-width: 1200px) {
+      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1200 - 320)));
+      text-align: center;
+    }
+  }
+  &__image-block {
+    top: 0;
+    left: 0;
+    position: relative;
+    max-width: 583px;
+    width: 100%;
+    min-height: 478px;
+    z-index: -2;
+    background: $bg-baner-color;
+    border: 1px solid #000;
+  }
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 80px;
+    position: relative;
+    @media (max-width: 1200px) {
+      margin-right: 0px;
+    }
+
+    &--reverse {
+      margin-right: 0;
+      margin-left: 80px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 585px;
+        min-height: 469px;
+        border: 1px solid $purple;
+        background-color: $purple;
+        bottom: 62px;
+        left: 260px;
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+      }
+    }
+    &--static {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 585px;
+        min-height: 469px;
+        border: 1px solid $blue;
+        background-color: $blue;
+        bottom: 65px;
+        right: 246px;
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__image {
+    max-width: 625px;
+    width: 100%;
+    position: relative;
+    @media (max-width: 1200px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  &__button {
+    margin-bottom: 60px;
+    @media (max-width: 1200px) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__adress-link {
+    @include text($H18, 400, $text-font);
+    font-style: italic;
+  }
+  &__adress-icon {
+    margin-right: 12px;
+  }
+}

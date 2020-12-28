@@ -1,0 +1,72 @@
+.gallery {
+max-width: 1200px;
+padding-left: 14px;
+padding-right: 14px;
+margin: 0 auto;
+width: 100%;
+  &__title {
+    @include text($H44, 500, $button);
+    font-family: $second-font;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 145px;
+    padding-bottom: 170px;
+    
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      margin: 0 auto;
+      border: 1px solid $button;
+      background-color: $button;
+      left: 0;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1200px) {
+      font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 -320)));
+      margin-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+  }
+  &__box {
+    margin: 0 auto;
+  }
+  &__box img {
+    @media (max-width: 760px) {
+      width: 100%;
+      padding: 0 24px;
+      margin-bottom: 20px;
+    }
+   
+  }
+  &__box-img {
+    margin-bottom: 3px;
+  }
+  
+  &__button {
+    margin-top: 65px;
+    margin-bottom: 145px;
+    position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+  }
+}
+@media screen and (max-width: 1150px) {
+  .gallery__box-img img {
+    width: 100%;
+    
+  }
+  .gallery__box-images img {
+    width: 100%;
+    
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  background-image: url(../assets/images/header.png), $bg-baner-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  
+  
+  
+  &__container {
+    background-color:  #55b8ffc0;
+    padding: 0 24px;
+    // position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    @media screen and (min-width: 1150px) {
+      background-color:  transparent;
+   
+    }
+   
+  }
+  &__inner {
+   display: flex;
+  //  flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 20px;
+  }
+  &__logo {
+    padding: 0 0px 0 20px;
+    // padding: 0 40px 0 24px;
+    @media screen and (min-width: 366px) {
+      padding: 0 40px 0 24px;
+   
+    }
+  }
+  &__logo-img {
+    width: 75%;
+    @media screen and (min-width: 366px) {
+      width: 100%;
+  }
+}
+}
+
+

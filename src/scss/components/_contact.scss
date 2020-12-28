@@ -1,0 +1,100 @@
+.contact {
+  max-width: 770px;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+  box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 60px 60px 60px;
+  top: -320px;
+  
+  &__title {
+    @include text($H44, 700, $button);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      margin: 0 auto;
+      border: 1px solid $button;
+      background-color: $button;
+      left: 0;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1200px) {
+      font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 -320)));
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+    
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 47px;
+    @media (max-width: 620px) {
+      margin-right: 0;
+    }
+  }
+  &__list-item {
+    margin-bottom: 45px;
+    @include text($H18, 400, $button);
+    c {
+      font-size: calc(14px + (20 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+  }
+  &__list-item a {
+    @include text($H18, 400, $button);
+    @media (max-width: 1200px) {
+      font-size: calc(14px + (20 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    color: $purple;
+    margin-right: 10px;
+  }
+  &__form-input {
+    border: none;
+    outline: none;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    width: 300px;
+    border-bottom: 1px solid $form;
+    transition: all 0.2s ease;
+    &:active {
+      border: none;
+      border-bottom: 1px solid $button;
+    }
+    @media (max-width: 1200px) {
+     width: 200px;
+     margin: 0 auto;
+    }
+    
+}
+&__button {
+  @media (max-width: 1200px) {
+    margin-top: 30px;
+   }
+ 
+}
+}
+
+
+

@@ -1,0 +1,59 @@
+.footer {
+  background-image: url(../assets/images/footer.png),$bg-foo-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  &__wrapper {
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -250px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 12px;
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    @media (max-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__social {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+@include text($H14, 400, $white);
+@media (max-width: 1200px) {
+  text-align: center;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+  padding: 0 24px;
+}
+
+  }
+  &__line {
+    margin: 0 10px;
+    height: 22px;
+    border: transparent;
+    border-left: 1px solid $white;
+    background-color: $white;
+  }
+  &__icon {
+    transition: color 0.5s ease;
+    &:hover {
+      color: rgb(233, 4, 4);
+    }
+  }
+
+}
+ 

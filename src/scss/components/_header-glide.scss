@@ -1,0 +1,79 @@
+.glide-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.glide {
+  top: 29%;
+  &__slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__slide-title {
+    @include text($H80, 700, $white);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 24px;
+    @media (max-width: 1200px) {
+      font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 -320)));
+    }
+  }
+  &__slide-text {
+    @include text($H18, 400, $white);
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 0 40px;
+    @media (max-width: 1200px) {
+      font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 -320)));
+    }
+  }
+  &__bullets {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    left: 96%;
+    top: -55%;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__bullet {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid $white;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    margin: 20px;
+  }
+  &__bullet:focus {
+    outline: none;
+  }
+  &__bullet:hover,
+  &__bullet:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  &__bullet--active {
+    background-color: white;
+  }
+  &__arrows {
+    position: absolute;
+    top: 355px;
+    left: 48%;
+  }
+  &__arrow {
+    color: $white;
+    padding: 12px;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+}
+

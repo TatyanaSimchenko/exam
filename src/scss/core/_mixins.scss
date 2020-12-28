@@ -113,6 +113,14 @@ $z-index: (
   z-index: z-index($key);
 }
 
+@mixin hover() {
+  @include media {
+    &:hover {
+      @content;
+    }
+  }
+}
+
 /* Screens */
 $screen-iphone-5: 320px;
 $screen-iphone-6: 375px;

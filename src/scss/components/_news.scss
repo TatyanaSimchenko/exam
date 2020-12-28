@@ -1,0 +1,27 @@
+.news {
+  background-image: url(../assets/images/news/latest-bg.png), $bg-news-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1037px;
+  &__title {
+    @include text($H44, 700, $white);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 138px;
+    margin-bottom: 170px;
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 1px;
+      margin: 0 auto;
+      border: 1px solid $white;
+      background-color: $white;
+      left: 0;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1200px) {
+      font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1200 -320)));
+    }
+  }
+  }

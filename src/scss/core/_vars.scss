@@ -1,0 +1,44 @@
+//color
+$white: #fff;
+$blue: #55b7ff;
+$purple: #7e5aff;
+$button: #2c4058;
+$text: #4b5562;
+$form: #4b556298;
+
+
+//bg-color
+$bg-news-color: linear-gradient(to right, #3498e0 0%, #24ccfa 100%);
+$bg-foo-color: linear-gradient(to right top, #55b7ff 0%, #7e5aff 75%);
+$bg-baner-color: linear-gradient(to right top, #55b7ff 0%, #7e5aff 100%);
+
+//font-family
+$base-font:'Gotham-Book';
+$text-font:'Open Sans', sans-serif;
+$title-font:'Gotham';
+$second-font: 'Gotham-Medium';
+
+//font-size
+$base-font-size: 16px;
+
+@function calcRem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+$H14: calcRem(14px);
+$H18: calcRem(18px);
+$H22: calcRem(22px);
+$H44: calcRem(44px);
+$H80: calcRem(80px);
+
+//width
+$max-width: 1173px;
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

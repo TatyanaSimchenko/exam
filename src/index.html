@@ -4,12 +4,448 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="./scss/style.scss">
-  <title>Parcel</title>
+
+  <title>Monticello</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
+
 </head>
 
 <body>
-  <module href="/header.html">Parcel</module>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__inner">
+
+        <div class="header__logo">
+          <img class="header__logo-img" src="./assets/images/logo.png" alt="image">
+        </div>
+
+        <nav class="menu menu--desktop">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">news</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+            <li class="menu__item menu__social">
+              <ul class="social">
+                <li class="social__link"><a href="#"><i
+                      class="social__icon social__icon--facebook fab fa-facebook-f"></i></a></li>
+                <li class="social__link"><a href="#"><i class="social__icon fab fa-twitter"></i></a></li>
+                <li class="social__link"><a href="#"><i class="social__icon fab fa-instagram"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <nav id="menu" class="menu menu--mobile">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#about">about us</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">news</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+            <li class="menu__item menu__social">
+              <ul class="social">
+                <li class="social__link"><a href="#"><img class="social__link-img"
+                      src="./assets/images/socials/facebook.png" alt="icon"></a></li>
+                <li class="social__link"><a href="#"><img class="social__link-img"
+                      src="./assets/images/socials/twitter.png" alt="icon"></a></li>
+                <li class="social__link"><a href="#"><img class="social__link-img"
+                      src="./assets/images/socials/instagram.png" alt="icon"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="burger" class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="glide">
+      <div class="glide-wrapper">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <h1 class="glide__slide-title">Simple & mordern 1</h1>
+              <p class="glide__slide-text">We make the world's beautiful every day</p>
+            </li>
+            <li class="glide__slide">
+              <h1 class="glide__slide-title">Simple & mordern 2</h1>
+              <p class="glide__slide-text">We make the world's beautiful every day</p>
+            </li>
+            <li class="glide__slide">
+              <h1 class="glide__slide-title">Simple & mordern 3</h1>
+              <p class="glide__slide-text">We make the world's beautiful every day</p>
+            </li>
+            <li class="glide__slide">
+              <h1 class="glide__slide-title">Simple & mordern 4</h1>
+              <p class="glide__slide-text">We make the world's beautiful every day</p>
+            </li>
+            <li class="glide__slide">
+              <h1 class="glide__slide-title">Simple & mordern 5</h1>
+              <p class="glide__slide-text">We make the world's beautiful every day</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+              class="fas fa-chevron-down"></i></button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4"></button>
+        </div>
+
+      </div>
+      
+    </div>
+  </header>
+
+  <section class="about">
+    <h2 class="about__title">what we do</h2>
+
+    <div class="about__container">
+
+      <div class="about__image-wrapper about__image-wrapper--static">
+       
+        <img class="about__image" src="./assets/images/about/image-1.png" alt="image">
+      </div>
+      <div class="about__info">
+        <h3 class="about__ihfo-subtitle">one world</h3>
+        <h2 class="about__info-title">Trade center</h2>
+        <p class="about__info-text">Increasing properity in our lives can be accomplished by having the right frame of
+          mind. The truth is, our thoughts are very powerful.</p>
+        <button class="button about__button">more details</button>
+        <div class="about__adress">
+          <a class="about__adress-link"> <span class="about__adress-icon"><i class="fas fa-map-marker-alt"></i></span>
+            New York City, United States - 1776 feet</a>
+        </div>
+      </div>
+    </div>
+    <div class="about__container about__container--reverse">
+      <div class="about__image-wrapper about__image-wrapper--reverse">
+
+        <img class="about__image" src="./assets/images/about/image-2.png" alt="image">
+        
+      </div>
+      <div class="about__info">
+        <h3 class="about__ihfo-subtitle">International</h3>
+        <h2 class="about__info-title">Commerce Centre</h2>
+        <p class="about__info-text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of
+          recognition and how a digital advertising network may help.</p>
+        <button class="button about__button">more details</button>
+        <div class="about__adress">
+          <a class="about__adress-link"> <span class="about__adress-icon"><i class="fas fa-map-marker-alt"></i></span>
+            Hong Kong - 1588 Feet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <section class="news">
+    <h2 class="news__title">latest news</h2>
+    <div class="glide2">
+      <div class="glide-wrapper glide2-wrapper">
+        <div class="glide__track glide2__track" data-glide-el="track">
+
+          <ul class="glide__slides glide2__slides">
+
+            <li class="glide2__slide">
+              <div class="glide2__inner" >
+                <div class="slide-card__image">
+                  <img src="./assets/images/news/news-1.png" alt="image">
+                </div>
+                <div class="slide-card__news">
+                  <h1 class="slide-card__news-title">See The Unmatched Beauty Of The Great. Lakes.</h1>
+                  <p class="slide-card__news-text">Free directories: directories are perfect for customers that are...
+                    searching for a </p>
+                </div>
+                <div class="slide-card__author">
+                  <img src="./assets/images/news/avatar-1.png" alt="image">
+                  <div class="slide-card__name">
+                    <p class="slide-card__name-name">Isaac Dunn</p>
+                    <p class="slide-card__name-data">09 Feb 2017</p>
+                  </div>
+                </div>
+              </div>
+              
+
+            </li>
+            <li class="glide2__slide">
+              <div class="glide2__image">
+                <img src="./assets/images/news/news-2.png" alt="image">
+              </div>
+              <div class="glide2__news">
+                <h1 class="glide2__news-title">Effective Advertising Pointers.</h1>
+                <p class="glide2__news-text">Having a home based business is a wonderful asset to your life...</p>
+              </div>
+              <div class="glide2__author">
+                <img src="./assets/images/news/avatar-2.png" alt="image">
+                <div class="glide2__name">
+                  <p class="glide2__name-name">Dominic Freeman</p>
+                  <p class="glide2__name-data">24 Apr 2017</p>
+                </div>
+              </div>
+            </li>
+            <li class="glide2__slide">
+              <div class="glide2__image">
+                <img src="./assets/images/news/news-3.png" alt="image">
+              </div>
+              <div class="glide2__news">
+                <h1 class="glide2__news-title">Hypnotize Yourself Into The Ghost.
+                  Of Christmas Future</h1>
+                <p class="glide2__news-text">here are many things that are important to catalog design....</p>
+              </div>
+              <div class="glide2__author">
+                <img src="./assets/images/news/avatar-3.png" alt="image">
+                <div class="glide2__name">
+                  <p class="glide2__name-name">Alice Ward</p>
+                  <p class="glide2__name-data">09 Feb 2017</p>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+        <div class="glide2__arrows" data-glide-el="controls">
+          <button class="glide2__arrow glide__arrow--left" data-glide-dir="<"><i
+              class="fas fa-chevron-left"></i></button>
+          <button class="glide2__arrow glide2__arrow--right" data-glide-dir=">"><i
+              class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="glide2__bullets" data-glide-el="controls[nav]">
+          <button class=" glide2__bullet" data-glide-dir="=0"></button>
+          <button class=" glide2__bullet" data-glide-dir="=1"></button>
+          <button class=" glide2__bullet" data-glide-dir="=2"></button>
+          <button class=" glide2__bullet" data-glide-dir="=3"></button>
+          <button class=" glide2__bullet" data-glide-dir="=4"></button>
+        </div>
+
+      </div>
+  </section> -->
+
+  <!-- <section class="news">
+    <div class="container news__container">
+      <h2 class="title news__title">latest news</h2>
+      <div class="news-glide">
+        <div class="news-glide__track" data-glide-el="track">
+          <ul class="news-glide__slides">
+              <li class="news-glide__slide">
+                <div class="card">
+                  <img class="card__image" src="./assets/images/news/news-1.png" alt="image">
+                  <div class="card__hover"></div>
+                  <div class="card__inner">
+                  <h3 class="card__title">Hypnotize Yourself Into The Ghost.</h3>
+                  <span class="card__description">There are many things that are important to catalog design....</span>
+                  <div class="card__avatar-inner">
+                      <img class="card__avatar-image" src="./assets/images/news/avatar-1.png" alt="avatar">
+                      <div class="card__avatar-wrapper">
+                      <h3 class="card__avatar-name">Alice Ward</h3>
+                      <h4 class="card__avatar-date">30 Dec 2017</h4>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+              </li>
+            <li class="news-glide__slide">
+              <div class="card">
+                <img class="card__image" src="./assets/images/news/news-2.png" alt="image">
+                <div class="card__hover"></div>
+                <div class="card__inner">
+                <h3 class="card__title">See The Unmatched Beauty Of The Great.</h3>
+                <span class="card__description">Free directories: directories are perfect for customers that are... searching for</span>
+                <div class="card__avatar-inner">
+                    <img class="card__avatar-image" src="./assets/images/news/avatar-2.png" alt="avatar">
+                    <div class="card__avatar-wrapper">
+                    <h3 class="card__avatar-name">Isaac dunn</h3>
+                    <h4 class="card__avatar-date">09 Feb 2017</h4>
+                    </div>
+                </div>
+                </div>
+            </div>  
+            </li>
+            <li class="news-glide__slide">
+              <div class="card">
+                <img class="card__image" src="./assets/images/news/news-3.png" alt="image">
+                <div class="card__hover"></div>
+                <div class="card__inner">
+                <h3 class="card__title">Effective Advertising Pointers.</h3>
+                <span class="card__description">Having a home based business is a wonderful asset to your life...</span>
+                <div class="card__avatar-inner">
+                    <img class="card__avatar-image" src="./assets/images/news/avatar-3.png" alt="avatar">
+                    <div class="card__avatar-wrapper">
+                    <h3 class="card__avatar-name">Dominic Freeman</h3>
+                    <h4 class="card__avatar-date">24 Apr 2017</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </li>
+            <li class="news-glide__slide">
+              <div class="card">
+                <img class="card__image" src="./assets/images/news/news-1.png" alt="image">
+                <div class="card__hover"></div>
+                <div class="card__inner">
+                <h3 class="card__title">Hypnotize Yourself Into The Ghost.</h3>
+                <span class="card__description">There are many things that are important to catalog design....</span>
+                <div class="card__avatar-inner">
+                    <img class="card__avatar-image" src="./assets/images/news/avatar-1.png" alt="avatar">
+                    <div class="card__avatar-wrapper">
+                    <h3 class="card__avatar-name">Alice Ward</h3>
+                    <h4 class="card__avatar-date">30 Dec 2017</h4>
+                    </div>
+                </div>
+                </div>
+            </div>  
+          </li>
+            <li class="news-glide__slide">
+              <div class="card">
+                <img class="card__image" src="./assets/images/news/news-2.png" alt="image">
+                <div class="card__hover"></div>
+                <div class="card__inner">
+                <h3 class="card__title">See The Unmatched Beauty Of The Great.</h3>
+                <span class="card__description">Free directories: directories are perfect for customers that are... searching for</span>
+                <div class="card__avatar-inner">
+                    <img class="card__avatar-image" src="./assets/images/news/avatar-2.png" alt="avatar">
+                    <div class="card__avatar-wrapper">
+                    <h3 class="card__avatar-name">Isaac dunn</h3>
+                    <h4 class="card__avatar-date">09 Feb 2017</h4>
+                    </div>
+                </div>
+                </div>
+            </div>  
+          </li>
+          </ul>
+          <div class="news-glide__arrows" data-glide-el="controls">
+              <button class="news-glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="news-glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i
+              class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="news-glide__bullets" data-glide-el="controls[nav]">
+              <button class="news-glide__bullet" data-glide-dir="=0"></button>
+              <button class="news-glide__bullet" data-glide-dir="=1"></button>
+              <button class="news-glide__bullet" data-glide-dir="=2"></button>
+              <button class="news-glide__bullet" data-glide-dir="=3"></button>
+              <button class="news-glide__bullet" data-glide-dir="=4"></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="gallery">
+    <h2 class="gallery__title">gallery</h2>
+    <div class="gallery__images">
+      <div class="gallery__box">
+        <img src="./assets/images/gallery/gallery-1.png" alt="image">
+      </div>
+      <div class="gallery__box">
+        <div class="gallery__box-img">
+          <img src="./assets/images/gallery/gallery-2.png" alt="image">
+          <img src="./assets/images/gallery/gallery-3.png" alt="">
+        </div>
+        <div class="gallery__box-images">
+          <img src="./assets/images/gallery/gallery-4.png" alt="image">
+          <img src="./assets/images/gallery/gallery-5.png" alt="image">
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="button gallery__button">see more</button>
+
+  </section>
+
+  <section class="map">
+    <div class="map__container">
+      <iframe class="map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18676.66792522373!2d-0.18034604723791178!3d51.507266690556314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876054929181a85%3A0xd1af6c4f49b4bd0c!2z0JPQsNC50LQt0L_QsNGA0Lo!5e1!3m2!1suk!2sua!4v1608937154022!5m2!1suk!2sua"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <section class="contact">
+      <h2 class="contact__title">get in touch</h2>
+      <div class="contact__info">
+        <ul class="contact__list">
+          <li class="contact__list-item">
+            <p class="contact__list-item-text">
+              <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
+              91 Nolan Extensions Suite 670
+            </p>
+          </li>
+          <li class="contact__list-item">
+            <a class="contact__list-tel" href="#">
+              <span class="contact__icon"><i class="fas fa-phone"></i></span>
+              +001 356-868-2454
+            </a>
+          </li>
+          <li class="contact__list-item">
+            <a class="contact__list-mail" href="#">
+              <span class="contact__icon"><i class="fas fa-inbox"></i></span>
+              gahuy93@gmail.com
+            </a>
+          </li>
+
+          <li class="contact__list-item">
+            <p class="contact__list-item-text">
+              <span class="contact__icon"><i class="far fa-clock"></i></span>
+              From 07:05AM to 19:30PM
+            </p>
+          </li>
+        </ul>
+
+        <form class="contact__form">
+          <input class="contact__form-input" type="text" placeholder="Mollie Medina" required>
+          <input class="contact__form-input" type="email" placeholder="Email" required>
+          <button class="button contact__button">submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="./assets/images/logo.png" alt="image">
+        </div>
+        <ul class="social footer__social">
+          <li class="social__link"><a href="#"><i class="social__icon social__icon--facebook fab fa-facebook-f"></i></a>
+          </li>
+          <li class="social__link"><a href="#"><i class="social__icon fab fa-twitter"></i></a></li>
+          <li class="social__link"><a href="#"><i class="social__icon fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__text">Copyrights © 2017 Monticello Group
+        <span class="footer__line"></span>
+        Made with <span class="footer__icon"><i class="fas fa-heart"></i></span> by Ga Huy
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
